@@ -13,6 +13,6 @@ From here, I gathered several months of Tweets and scraped the Service Archive. 
 
 <img src="https://github.com/andrewyue/WMATAWatcher/blob/master/WMATAWatcher.png">
 
-The features used were the Tweet volume, Tweet day of week and hour of day, and the fraction of Tweets that could be classified into categories by their word content.
+The features used were the Tweet volume, Tweet day of week and hour of day, and the fraction of Tweets that could be classified into categories by their word content
 
-The estimator used was a class-weighted random forest.
+From the point of view of a classification problem, delays are a rare occurence on Metro.  As such, it was necessary to use a class-weighted estimator.
