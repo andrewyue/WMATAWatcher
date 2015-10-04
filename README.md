@@ -1,5 +1,7 @@
 # WMATA Watcher
-A study of tweets and their correlation to delays in public transportation.  In recent months, service issues on Washington DC's MetroRail have been on the uptick:
+A study of tweets and their correlation to delays in public transportation.
+
+In recent years, service issues on Washington DC's MetroRail have been on the uptick:
 
 <img src="https://github.com/andrewyue/WMATAWatcher/blob/master/Fig1.jpg">
 
