@@ -17,7 +17,7 @@ As shown in the sketchnote, a "bag of words" approach was used to construct feat
 
 A more coarse-grain model was built to categorize Tweets based on their word content:
 <ol>
-<li>1) Delay-related Tweets - containing words such as "delay" or "offloading"</li>
+<li>Delay-related Tweets - containing words such as "delay" or "offloading"</li>
 <li>Line-related Tweets - containing specific mention of the line colors of Metro</li>
 <li>Service OK-related Tweets - containing specific mention of words related to service resuming</li>
 </ol>
