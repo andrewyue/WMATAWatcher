@@ -13,7 +13,7 @@ From here, I gathered several months of Tweets and scraped the Service Archive. 
 
 <img src="https://github.com/andrewyue/WMATAWatcher/blob/master/WMATAWatcher.png">
 
-From the point of view of a classification problem, delays are a rare occurence on Metro.  As such, it was necessary to use a class-weighted estimator.  As shown in the sketchnote, a "bag of words" approach was used to construct features initially.  Word content of the tweets (both 1 and 2-grams) were vectorized and normalized by term-frequency inverse document-frequency.  Classification by class-weighted Random Forest and SVM both sacrificed far too much absolute accuracy to boost the precision (predicting a delay in each time bin), and so were not useful for deployment to an app.
+As shown in the sketchnote, a "bag of words" approach was used to construct features initially.  Word content of the tweets (both 1 and 2-grams) were vectorized and normalized by term-frequency inverse document-frequency.  Classification by Random Forest and SVM both sacrificed far too much absolute accuracy to boost the precision (predicting a delay in each time bin), and so were not useful for deployment to an app.
 
 A more coarse-grain model was built to categorize Tweets based on their word content:
 <ol>
@@ -22,4 +22,4 @@ A more coarse-grain model was built to categorize Tweets based on their word con
 <li>Service OK-related Tweets - containing specific mention of words related to service resuming</li>
 </ol>
 
-Additional features used were the Tweet volume, Tweet day of week, hour of day, month, and week of the year. 
+Additional features used were the Tweet volume, Tweet day of week, hour of day, month, and week of the year.  A recall of 0.5 is achieved using a Random Forest.
